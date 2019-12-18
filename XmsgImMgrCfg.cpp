@@ -186,7 +186,7 @@ bool XmsgImMgrCfg::loadNeMsgPrefixCfg(XMLElement* root)
 	node = node->FirstChildElement("ne");
 	while (node != NULL)
 	{
-		string key = Misc::strAtt(node, "msg-prefix");
+		string key = Misc::strAtt(node, "prefix");
 		string val = Misc::strAtt(node, "neg");
 		if (key.empty() || val.empty())
 		{
